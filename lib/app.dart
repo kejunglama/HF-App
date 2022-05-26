@@ -3,13 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:healthfix/wrappers/authentification_wrapper.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
 import 'constants.dart';
 import 'screens/home/home_screen.dart';
 import 'theme.dart';
 
 class App extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,7 +21,6 @@ class App extends StatelessWidget {
           nextScreen: HomeScreen(),
           splashTransition: SplashTransition.fadeTransition,
           pageTransitionType: PageTransitionType.fade,
-        )
-        );
+        ));
   }
 }
